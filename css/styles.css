@@ -1,0 +1,71 @@
+.tobeimplementedlater{
+    color:red;
+
+}
+
+*{
+    font-family: 'Lato', sans-serif;
+
+}
+header,
+main, footer{
+    margin: 0 10px 0 10px;
+
+}
+
+h1{
+    font-size:14px;
+    margin: 16px 0 0 0;
+}
+.seperation {
+    border-bottom: 2px solid gray;
+
+}
+
+.navigation ul{
+    list-style-type: none;
+    display: inline;
+
+}
+.navigation ul li{
+    
+    display:inline-block;
+    margin:5px;
+
+}
+
+.navigation ul li a{
+    
+   float:left;
+
+}
+
+.searchbar {
+float:right; 
+}
+.main{
+    padding: 0 0 200px 0;
+}
+
+.main h1{
+    text-align:center;
+    
+
+}
+
+footer{
+    display:inline;
+}
+
+.rating{
+    float: left;
+    margin: 0 10px 0 10px;
+ 
+
+}
+
+.contact{
+    float:right;
+    margin: 0 10px 0 10px;
+}
+
