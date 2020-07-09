@@ -4,44 +4,72 @@
     font-family: 'Lato', sans-serif;
 }
 
+
+/* flexbox */
+
 body {
     margin: 0;
     display: flex;
     flex-direction: column;
     min-height:100vh;
-
-
-}
-.wrapper {
-
-}
-
-
-.tobeimplementedlater{
-    color:red;
-
-}
-h1{
-    font-size:14px;
-}
-.seperation {
-    border-bottom: 2px solid gray;
-
 }
 
 .wrapper{
     display:flex;
     flex:1;
-
 }
 
-/* .col{
-
-} */
-
-.firstcol{
-    flex:0.5;  
+nav {
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items:left;
+    flex: 1;
 }
+
+nav ul {
+    flex-direction: column;
+    justify-content: space-around;
+  
+}
+.searchbar,
+main section {
+ display: flex;
+}
+
+
+.searchbar {
+    order:2;
+    flex-grow:1;
+}
+
+main section  {
+    text-align: left;
+    /* margin:auto; */
+    padding: 0 32px 0 32px;
+    flex-direction: column;
+}
+
+.rating,
+.contact{
+    display: flex;
+    flex-direction: column;
+    flex:1;
+}
+
+.rating{
+  
+}
+
+
+
+
+
+.searchbar label{
+    padding: 0 4px 0 0;
+}
+ 
+
 
 .secondcol{
     flex:2;
@@ -52,29 +80,44 @@ h1{
 
 .row{
     display:flex;
-    flex:1;
-    
-   
+    flex:1; 
 }
 
-main {
-    background-color:pink;
-     align-items: center; ;
+
+main,
+footer{
+    display:flex;
+
 }
 main {
-    flex:2;
+    flex:3;  
 }
 
 footer {
-    background-color:yellow;
     flex:1;
-    align-content:flex-end;
+    align-content: flex-end;
 }
-/* footer {
- flex-direction: column;
-} */
 
 
+
+
+
+
+
+
+
+/* Basestyle */
+
+.tobeimplementedlater{
+    color:red;
+
+}
+h1{
+    font-size:14px;
+}
+.seperation {
+    border-bottom: 2px solid gray;
+}
 
 nav {
     /* position:fixed; */
@@ -82,20 +125,12 @@ nav {
     padding:10px;
     width:150px;
     min-height:100%;
-    display:flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items:left;
-    flex: 1;
-
+    
 }
 
  nav ul {
     list-style:none;
     padding-left:0;
-    flex-direction: column;
-    justify-content: space-around;
-  
 }
 
 nav ul li{
@@ -104,25 +139,30 @@ nav ul li{
 
 .primarypagesnav{
     font-weight:bold;
-
-}
-.searchbar {
-
- 
 }
 
+.searchbar { 
+    margin: 12px 0 0 0;
+    padding: 0 32px 0 32px; 
+    max-height:20px;
+
+}
 
 
 .main{
     padding: 0 0 200px 0;
 }
 
-
+footer {
+    padding: 0 32px 0 32px;
+}
 
 .rating{
     margin: 0 10px 0 10px;
- 
+}
 
+.checked {
+    color: orange;
 }
 
 .contact{

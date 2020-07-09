@@ -1,4 +1,4 @@
-<!doctype html>
+  <!doctype html>
 
 <html lang="en">
 <head>
@@ -9,6 +9,7 @@
   <meta name="W3C" content="Rules">
 
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
 </head>
@@ -59,17 +60,20 @@
 
     <div class="col secondcol">  
       <main class="main">
-
-            <div class="row">
-              <div>
-                <p aria-label="dynamic functionality has to be implemented later" class="tobeimplementedlater searchbar"> searchbar for total website </p>
-            </div>  
+            <div class="row firstrow">
+                  <form class="searchbar" action="/action_page.php">
+                    <label for="gsearch">Search </label>
+                    <input type="search" id="gsearch" name="gsearch" value>
+                    <input type="submit"  class="Search" value="Search">
+                  </form>
+                <!-- <p aria-label="dynamic functionality has to be implemented later" class="tobeimplementedlater "> searchbar for total website  -->
+          
 
             <section>
               <h1>Wecome at the homepage</h1>
               <p>orem ipsum dolor sit amet, consectetur adipiscing elit. Morbi pretium mi nec nisl tempor, ut vulputate dolor mattis. Ut sit amet porta sapien. Aenean ut sagittis risus, nec malesuada tortor. Nullam rutrum malesuada odio tristique tincidunt. Proin feugiat iaculis mauris nec facilisis. Curabitur a magna ut dui gravida suscipit. Phasellus a felis elementum, malesuada felis quis, ornare turpis. Vivamus in leo orci.</p>
             </section>
-      
+        
 
    
           </div>
@@ -80,10 +84,17 @@
   
    
     <footer>
-      <div class="row stickyfooter">
+      <div class="row  secondrow">
       <div class="rating"> 
         <h1> Was this page helpful?</h1>
-        <p aria-label="dynamic functionality has to be implemented later" class="tobeimplementedlater"> star rating functionality</p>
+        <div aria-label="starrating static does not work yet">
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star"></span>
+          <span class="fa fa-star"></span>
+      </div>
+       
       </div> 
     
           
@@ -99,7 +110,7 @@
    
   
   </div>
-<!---end of col 2-->
+<!---end of col 3-->
 </div>
 <!--- end of wrapper-->
   <script src="accordian.js">
