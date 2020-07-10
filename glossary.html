@@ -9,53 +9,112 @@
   <meta name="W3C" content="Rules">
 
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 
 </head>
 
 <body>
-  <div id="wrapper">
-  <header>
-    <nav class="navigation seperation">
-      <ul>
-        <li> <a href="index.html" >Homelogo</a></li>
-        <li><a href= "rules.html">Rules</a></li>  
-        <li><a href= "implementation.html">Implementation</a></li>  
-        <li><a href= "feedback.html">Feedback </a></li>  
-        <li><a href= "contribute.html">Contribute </a></li>  
-        <li><a href= "support.html">Support </a></li>  
-        <li><a href= "about.html">About </a></li>  
-        <li><a href= "glossary.html">Glossary  </a></li>  
-        <li><a href= "contact.html">Contact  </a></li>  
-        <li aria-label="dynamic functionality has to be implemented later" class="tobeimplementedlater searchbar"> searchbar for total website</li>
-      </ul>
+
+  <div class= "wrapper">
+
+    <header class="col firstcol" >
+      <nav class="navigation ">
+
+        <a href="index.html" >ACT RULES COMMUNITY</a>
+        <ul>
+          <li><a href= "rules.html" class="primarypagesnav">Rules</a>
+            <ul>
+              <li><a href="#"> Terms of service </a> </li>
+              <li><a href="#">Rule design </a> </li>
+              <li><a href="#">Process</a></li>
+            </ul>
+          </li>  
+          <li><a href= "implementation.html" class="primarypagesnav">Implementation</a> 
+            <ul>
+              <li><a href="#">Manual testing </a> </li>
+              <li><a href="#">Rule templat</a></li>
+              <li><a href="#">Mapping to rule </a></li>
+              <li><a href="#">Reporting format</a></li>
+              <li><a href="#">Test cases</a></li>
+              <li><a href="#">Testing tools</a></li>
+              <li><a href="#">Sumbit an implementation</a></li>
+            </ul></li>  
+          <li><a href= "feedback.html" class="primarypagesnav">Feedback </a></li>  
+          <li><a href= "contribute.html" class="primarypagesnav">Contribute </a></li>  
+          <li><a href= "support.html" class="primarypagesnav">Support </a> 
+            <ul>
+              <li><a href="#">How to get help</a> </li>
+              <li><a href="#">Release notes</a></li>
+              <li><a href="#">Frequently Asked questions</a></li>
+              <li><a href="#">Reference material</a></li>
+            </ul> </li>
+          <li><a href= "about.html" class="primarypagesnav">About </a></li>  
+          <li><a href= "glossary.html" class="primarypagesnav"> Glossary  </a></li>  
+          <li><a href= "contact.html"class="primarypagesnav">Contact  </a></li>  
+          
+        </ul>
+    
+      
+    </header>
+
+    <div class="col secondcol">  
+      <main class="main">
+            <div class="row firstrow">
+                  <form class="searchbar" action="/action_page.php">
+                    <label for="gsearch">Search </label>
+                    <input type="search" id="gsearch" name="gsearch" value>
+                    <input type="submit"  class="Search" value="Search">
+                  </form>
+                <!-- <p aria-label="dynamic functionality has to be implemented later" class="tobeimplementedlater "> searchbar for total website  -->
+          
+
+            <section>
+              <h1 >Wecome at the homepage</h1>
+              <p>orem ipsum dolor sit amet, consectetur adipiscing elit. Morbi pretium mi nec nisl tempor, ut vulputate dolor mattis. Ut sit amet porta sapien. Aenean ut sagittis risus, nec malesuada tortor. Nullam rutrum malesuada odio tristique tincidunt. Proin feugiat iaculis mauris nec facilisis. Curabitur a magna ut dui gravida suscipit. Phasellus a felis elementum, malesuada felis quis, ornare turpis. Vivamus in leo orci.</p>
+            </section>
+        
+
    
+          </div>
+             <!---Row with second column-->
+        </main> 
+     
+   
+  
+   
+    <footer>
+      <div class="row  secondrow">
+      <div class="rating"> 
+        <h1> Was this page helpful?</h1>
+        <div aria-label="starrating static does not work yet">
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star"></span>
+          <span class="fa fa-star"></span>
+      </div>
+       
+      </div> 
     
-  </header>
-
-  <main class="main seperation">
-
-  <h1>Wecome at the homepage</h1>
-    <p>orem ipsum dolor sit amet, consectetur adipiscing elit. Morbi pretium mi nec nisl tempor, ut vulputate dolor mattis. Ut sit amet porta sapien. Aenean ut sagittis risus, nec malesuada tortor. Nullam rutrum malesuada odio tristique tincidunt. Proin feugiat iaculis mauris nec facilisis. Curabitur a magna ut dui gravida suscipit. Phasellus a felis elementum, malesuada felis quis, ornare turpis. Vivamus in leo orci.</p>
-  </main>
-
-  <footer >
-
-   <div class="rating"> 
-    <h1> Was this page helpful?</h1>
-    <p aria-label="dynamic functionality has to be implemented later" class="tobeimplementedlater"> star rating functionality</p>
-  </div> 
- 
-    
-  <div class="contact">
-    <h1>Contact us </h1>
-    <p>sent us an email to email to <a href="mailto:someone@example.com">someone@example.com</a> or 
-    visit our <a href="contact.html">contact page</a>.
-    </p>
+          
+        <div class="contact">
+          <h1>Contact us </h1>
+          <p>sent us an email to email to <a href="mailto:someone@example.com">someone@example.com</a> or 
+          visit our <a href="contact.html">contact page</a>.
+          </p>
+        </div>
+      </div>
+        <!---end of second row within second column-->
+    </footer> 
+   
+  
   </div>
-
-  </footer>
-
+<!---end of col 3-->
 </div>
+<!--- end of wrapper-->
+  <script src="accordian.js">
+  </script>
 
 </body>
 
