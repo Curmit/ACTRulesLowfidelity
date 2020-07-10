@@ -39,7 +39,7 @@ main section {
 
 
 .searchbar {
-    order:2;
+    /* order:2; */
     flex-grow:1;
 }
 
@@ -63,8 +63,6 @@ main section  {
 
 
 
-
-
 .searchbar label{
     padding: 0 4px 0 0;
 }
@@ -72,7 +70,7 @@ main section  {
 
 
 .secondcol{
-    flex:2;
+    flex:2 50%;
     display:flex;
     flex-direction: column;
     min-height:100vh;
@@ -81,10 +79,24 @@ main section  {
 .row{
     display:flex;
     flex:1; 
+    max-width:1024px;
+    
+}
+
+.secondrow {
+    display:flex;
+
+}
+
+.thirdrow{
+display:flex;
+}
+
+.firstarticle {
+    flex-wrap:wrap;
 }
 
 
-main,
 footer{
     display:flex;
 
@@ -93,14 +105,20 @@ main {
     flex:3;  
 }
 
+.firstrow {
+display:flex;
+}
+
+
+.col-main {
+flex:1;
+}
+
+
 footer {
     flex:1;
     align-content: flex-end;
 }
-
-
-
-
 
 
 
@@ -112,10 +130,37 @@ footer {
     color:red;
 
 }
+.h1-welcome{
+    font-size:32px;
+    margin: 16px 0 8px 0; 
 
+}
+
+/*homepgae articles*/
+
+.p-explanation {
+    font-size: 16px;
+    margin: 8px 0 8px 0; 
+}
+
+.p-whattoexpect {
+    font-size: 12px;
+    color: #6B6B6B;
+    text-transform:uppercase;
+}
+
+.links-whattoexpect {
+    list-style: none;
+    padding: 0;
+}
 
 h1{
     font-size:16px;
+}
+
+
+button {
+    max-width: 128px;
 }
 
 
@@ -137,9 +182,14 @@ nav {
     padding-left:0;
 }
 
+/*list*/
+
 nav ul li{
     margin:4px;
 }
+
+
+
 
 .primarypagesnav{
     font-weight:bold;
